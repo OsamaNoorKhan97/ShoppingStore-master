@@ -1,0 +1,26 @@
+.container{
+  overflow-y: auto;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-container{
+  width: 18rem;
+  padding: 10px;
+  margin: 15px;
+  height: 100%;
+  background-color: #ded3ff;
+}
+.products{
+  background: #030a1a;
+
+}
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+}
+.thumbnail-img{
+
+  // height: 50px;
+  // width: 50px;
+}
