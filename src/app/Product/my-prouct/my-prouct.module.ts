@@ -8,6 +8,8 @@ import { MyProuctRoutingModule } from './my-prouct-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogueboxComponent } from '../dialoguebox/dialoguebox.component';
 
 
 @NgModule({
@@ -15,14 +17,16 @@ import { MatCardModule } from '@angular/material/card';
     HeaderComponent,
     FooterComponent,
     ProductsComponent,
-    DetailComponent
+    DetailComponent,
+    DialogueboxComponent
   ],
   imports: [
     CommonModule,
     MyProuctRoutingModule,
     ReactiveFormsModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
 
   ]
 })

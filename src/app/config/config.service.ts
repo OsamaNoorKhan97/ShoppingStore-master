@@ -12,7 +12,7 @@ export class ConfigService {
   return this.http.get('https://dummyjson.com/products');
   }
   getProductData(ID: any){
-   return this.http.get('https://dummyjson.com/products/1');
+   return this.http.get('https://dummyjson.com/products/'+ ID);
   }
 
 }

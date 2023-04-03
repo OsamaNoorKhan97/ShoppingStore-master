@@ -16,7 +16,9 @@ import {MyLoginModule} from '../app/LoginComponents/my-login/my-login.module';
 @NgModule({
   declarations: [
     AppComponent,
+    
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,

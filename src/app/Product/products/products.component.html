@@ -46,7 +46,8 @@
 </div> -->
 <div class="products">
   <div class="container">
-  <mat-card class="example-card" *ngFor="let item of product">
+  <mat-card class="example-card" *ngFor="let item of product" (click)="openDialog('1500ms', '1500ms',item.id)">
+    <!-- <button mat-button (click)="openDialog()">Open dialog</button> -->
   <!-- <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div> -->
     <!-- <mat-card-title>Shiba Inu</mat-card-title>
@@ -63,6 +64,10 @@
       <button mat-fab extended color="accent">
         <mat-icon>add_shopping_cart</mat-icon>
         Add to Cart
+      </button>
+      <button mat-fab extended color="accent" >
+        <mat-icon>description</mat-icon>
+        <span class="p-2" (click)="openDialogDetail(item.id)">Detail</span>
       </button>
     </div>
     <!-- <button mat-button></button> -->
@@ -96,3 +101,6 @@
 </mat-card>
 </div>
 </div> -->
+<!-- (click)="openDetail(item.id) -->
+
+<!-- (click)="openDialog(item.ID)" -->
